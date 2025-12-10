@@ -888,5 +888,7 @@ Al pulsar el botón que hay en la página, se abrirá un menú lateral en el cu�
 
 ### 4.6. Conclusión personal
 
+Como conculsión personal, he aprendido mucho con esta práctica, como lo sería utilizar el Grid y Flex, algo de JavaScript y como ajustar cosas con padding y margin. Aún así, hay cosas que me gustaría mejorar como lo sería ajustar cosas, el apartado visual de la página y la organización de HTML y CSS. Gracias a está práctica me he dado cuenta que me cuesta mucho ajustar algunas imágenes con Flex, así que necesitaría práctica más en ello.
 
+Por último, lo que más me gusta de mi web es el apartado visual, sobre todo la selección de colores y la galería de imágenes. También debo admitir que fue muy entretenido realizar la tabla o el formulario en HTML y depués decorarlo.  
 
