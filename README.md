@@ -140,15 +140,19 @@ Así es como se vería en la página:
 ![Header](img/header.png)
 ![MenuLateral](img/menuLateral.png)
 
+En el header podemos encontrar que estas las siguientes partes contienen enlaces:
+![EnlaceHeader](img/enlaces1.png)
+![EnlaceMenuLateral](img/enlaces2.png)
+
 2. Main
 
 
 El main, que es donde se recoge todo el contenido de la página web, se encuentra compuesto por todas las secciones que podemos encontrar en la página web, por lo tanto, iremos sección por sección viendo cada una de ellas:
 
-  2.1. Section Hero
+2.1. Section Hero
 
   
-  Este primer section, con id "hero", encontramos otro header el cual sirve para el título de la sección.       Luego, encontramos un article el cual abarca todo el texto y la imagen que se encuentran ahí. Hay un h3 para el subtítulo del texto que hay a continuación  
+Este primer section, con id "hero", encontramos otro header el cual sirve para el título de la sección.         Luego, encontramos un article el cual abarca todo el texto y la imagen que se encuentran ahí. Hay un h3 para    el subtítulo del texto que hay a continuación marcado por las etiquetas p. Por último encontramos un figure     que muestra la imagen de inicio del videojuego. 
   
 ```html
   <section id="hero">
@@ -171,32 +175,187 @@ El main, que es donde se recoge todo el contenido de la página web, se encuentr
       </article>
     </section>
 ```
-  
+
+  Así es como se vería en la página: 
   ![Hero](img/hero1.png)
+
+
     
   2.2. Section Galería de Imágenes
 
-  ![Galeria](img/galeria.png)
+    
+Para esta sección, encontramos la galería, el cúal consiste en un h2 como título de la sección y un figure      donde contiene todas las imágenes de la galería. A su vez, las imágenes tienen un enlace para que puedas        abrir la imagen original. 
   
-  2.3. Section Tabla/Especificaciones
+```html
+<section id="galeria">
+      <br><br>
+      <h2>Galería de imágenes</h2>
+      <br><br>
+      <figure>
+        <a href="img/img4.png"><img src="img/img4.png" alt="1"></a>
+        <a href="img/img5.png"><img src="img/img5.png" alt="2"></a>
+        <a href="img/img6.png"><img src="img/img6.png" alt="3"></a>
+        <a href="img/img7.png"><img src="img/img7.png" alt="4"></a>
+        <a href="img/img8.png"><img src="img/img8.png" alt="5"></a>
+        <a href="img/img1.png"><img src="img/img1.png" alt="6"></a>
+        <a href="img/img2.png"><img src="img/img2.png" alt="7"></a>
+        <a href="img/img3.png"><img src="img/img3.png" alt="8"></a>
+        <a href="img/img9.png"><img src="img/img9.png" alt="9"></a>
+      </figure>
+      <br><br>
+    </section>
+```
 
-  ![Tabla](img/tabla.png)
+Así es como se vería en la página: 
+![Galeria](img/galeria.png)
+
+
   
-  2.4. Section Formulario
-  ![Formulario](img/form.png)
+2.3. Section Tabla/Especificaciones
+
+En está sección, encontramos la tabla, la cúal tiene un h2 como título de la sección y a contnuación hacemos una tabla que se empieza con la etiqueta table y dentro de ella colocamos un tr por cada fila que hagamos. Dentro de cada tr, ponemos tantos th por cada columna que vayamos a colocar en la tabla. No podemos olvidarnos de que debemos espeficiar con colspan la cantidad de datos que vamos a colocar, en este caso siempre serán 2.
+
+```html
+<section id="tab">
+      <br>
+      <h2>Especificaciones</h2>
+      <br><br>
+        <table>
+          <tr>
+            <th colspan="2">Creadora</th>
+            <th>Commodorette</th>
+          </tr>
+          <tr>
+            <th colspan="2">Origen</th>
+            <th>Argentina</th>
+          </tr>
+          <tr>
+            <th colspan="2">Año de Publicación</th>
+            <th>2015</th>
+          </tr>
+          <tr>
+            <th colspan="2">Género</th>
+            <th>Aventura Misterio</th>
+          </tr>
+          <tr>
+            <th colspan="2">Creado con</th>
+            <th>RPG Maker 2003</th>
+          </tr>
+          <tr>
+            <th colspan="2">Duración</th>
+            <th>8 horas</th>
+          </tr>
+          <tr>
+            <th colspan="2">Última Actualización</th>
+            <th>Febrero 2017</th>
+          </tr>
+          <tr>
+            <th colspan="2">Sala Bonus</th>
+            <th>Sí</th>
+          </tr>
+          <tr>
+            <th colspan="2">Finales</th>
+            <th>2 Finales (Bueno y Malo)</th>
+          </tr>
+          <tr>
+            <th colspan="2">Traducción</th>
+            <th>Español e Inglés</th>
+          </tr>
+        </table>
+     <br>
+    </section>
+```
+
+
+Así es como se vería en la página: 
+![Tabla](img/tabla.png)
+
+
   
-  2.5. Section Contacto
-  ![Contacto](img/contc.png)
+2.4. Section Formulario
+
+En está sección, encontramos el formulario, el cúal tiene un h2 como título de la sección y debemos abrir dos etiquetas necesarias para que el formulario funciones: form y fieldset.
+
+Dentro de fielset, colocamos la etiqueta legend, la cual es el título del formulario. Luego, para crear el campo que indicará el nombre de los datos necesario para el formulario es label y dentro de él, ponemos for, que funciona como un id. Después tenemos que indicar que se coloca en ese campo que lo hacemos con la etiqueta input. 
+
+En input, debemos colocar id y name con el mismo nombre que el for y el type debe endicar que datos se esperar colocar ahí, por ejemplo, text para texto, email para correos y es necesario el @...
+
+Por último, fuera de fieldset, ponemos los botones para poder enviar o borrar el formulario. Al igual que el anterior input, debemos poner el type, que en el caso de enviar, cuando se pulse el botón, recargará la página y el value es el texto que se verá en la página.
+
+```html
+<section id="for">
+      <br>
+      <h2>Formulario</h2>
+        <h3>¿Quieres saber más sobre Time Traveler?</h3>
+        <br>
+        <form>
+          <fieldset>
+            <br>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+             <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="15" placeholder="+34 11111111" required>
+          </fieldset>
+          <input type="submit" value="Envíar" class="boton">
+          <input type="reset" value="Borrar" class="boton">
+        </form>
+    </section>
+```
+
+Así es como se vería en la página: 
+![Formulario](img/form.png)
+
+
+  
+2.5. Section Contacto
+
+En está última sección, encontramos el contacto, el cúal tiene un h2 como título de la sección y encontramos una lista desordenada que se abre con la etiqueta ul y li indica los componentes de esa lista. Aquí encontramos los enlaces a las redes sociales de la creadora del juego. Aquí es donde acaba el main.
+
+```html
+<section id="con">
+      <br>
+      <h2>Contacta a Commodorette</h2>
+          <ul>
+            <li><a href="https://x.com/Commodorette?s=20">Twitter/X</a></li>
+            <li><a href="https://www.tumblr.com/rimururu">Tumblr</a></li>
+            <li><a href="https://www.instagram.com/commodorette?igsh=bXY5ZTVtYXViZXB4">Instagram</a></li>
+            <li><a href="https://commodogames.wordpress.com/">Página Oficial de Descarga de sus Juegos</a></li>
+          </ul>
+    </section>
+```
+
+
+Así es como se vería en la página: 
+![Contacto](img/contc.png)
    
+
 
 3. Footer
-   
+
+Aquí podemos encontrar el footer, el cúal presenta un class llamado "site-footer" y una línea el cual indica quien creo la página, de que curso es y el año de creación. En está línea podemos encontrar que funciona como enlace para que puedas volver arriba de la página. 
+
+```html
+<footer class="site-footer">
+    <p><a href="#">&copy; 2025 — 1º DAM, Rocío Lobato Monferrer</a></p>
+  </footer>
+```
+
+
+Así es como se vería en la página: 
 ![Footer](img/footer.png)
 
 4. Enlaces Externos
-   
-![EnlaceHeader](img/enlaces1.png)
-![EnlaceMenuLateral](img/enlaces2.png)
+
+Aquí veremos cada enlace de la página:
+
+En el header podemos encontrar los enlaces siguientes: 
+
+
+
+
 ![EnlaceContacto](img/enlaces3.png)
 ![EnlaceFooter](img/enlaces4.png)
 ![EnlaceGalEj](img/enlacesEjGal.png)
