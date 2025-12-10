@@ -104,7 +104,7 @@ Para el diseño de la página he tomado la paleta de colores del juego, en el qu
    
 En el header, con una class "site-header", podemos encontrar el título de la página dentro de un h1, luego los sprites de los personajes más importantes del juego que se encuentran dentro de un figure. Después encontramos un nav con class "main-nav" que hace referencia a las diferentes secciones de la página para poder acceder a ellas mediante enlaces. A continuación tenemos un botón que sirve para el menú lateral, que funciona con JavaScript y por último encontramos otro nav con id "sideMenu" y un class "side-menu". En este otro nav se utiliza para el menú lateral el cual tiene unos enlaces que nos llevan a cada sección de la página, al igual que el primer nav.
 
-```
+```html
 <header class="site-header">
     <h1>Time Traveler</h1> 
     <figure>
@@ -150,7 +150,7 @@ El main, que es donde se recoge todo el contenido de la página web, se encuentr
   
   Este primer section, con id "hero", encontramos otro header el cual sirve para el título de la sección.       Luego, encontramos un article el cual abarca todo el texto y la imagen que se encuentran ahí. Hay un h3 para el subtítulo del texto que hay a continuación  
   
-```
+```html
   <section id="hero">
       <header>
         <br>
@@ -205,7 +205,7 @@ El main, que es donde se recoge todo el contenido de la página web, se encuentr
 
 Este sería el CSS utilizado para esta práctica:
 
-```
+```css
 /* ===== RESET CSS básico ===== */
 *, *::before, *::after {
   margin: 0;
@@ -492,7 +492,7 @@ A continuación veremos ejemplos de algunas cosas utilizadas en este CSS:
 
 Lo primero que destacaremos son los selectores:
 
-```
+```css
 #hero figure img {
     height: auto;
     margin: auto;
@@ -502,11 +502,11 @@ Lo primero que destacaremos son los selectores:
     border-radius: 10px;
 }
 ```
-Como podemos observar aquí, encontramos el id hero y que se espeficica que de ese hero el estilo se pondrán en una imagen dentro de un figure.
+Como podemos observar aquí, encontramos el id hero y que se espeficica que de ese hero el estilo se pondrán en una imagen dentro de un figure. Decidí hacerlo así ya que es más cómodo seleccionar la imagen del hero.
 
 Un ejemplo de un selector de class sería el siguiente:
 
-```
+```css
 .open-menu {
   position: fixed;
   top: 14px;
@@ -522,16 +522,16 @@ Un ejemplo de un selector de class sería el siguiente:
 
 A continuación veremos las pseudoclases: 
 
-```
+```css
 .side-menu a:hover {
   color: whitesmoke;
 }
 ```
-Aquí podemos observar que la pseudoclase sería :hover, que sirve para que cuando el cursos pase por esa zona, el texto se vuelva del color indicado. Lo utilizamos para que se note las opciones al pasar el cursor por ellas.
+Aquí podemos observar que la pseudoclase sería :hover, que sirve para que cuando el cursos pase por esa zona, el texto se vuelva del color indicado. Lo utilizamos para que se note las opciones al pasar el cursor por ellas. 
 
 Lo siguiente que veremos será un ejemplo de Grid:
 
-```
+```css
 #galeria figure {
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(200px, autofr));
@@ -542,9 +542,11 @@ Lo siguiente que veremos será un ejemplo de Grid:
 
 Primero, se necesita iniciar el grid con "display: grid;" y los siguientes dos líneas sriven para definir las columnas y filas que queremos. El "repeat(auto-fill)" selecciona cuantas filas o columnas colocar dependiedno de cuantas imágenes haya en el figure. El "minmax(200px, autofr/1fr)" sirve para poner un tamaño a las imágenes y el fr sirve para definir el espacio fraccional disponible para cada imágen. Por último, el gap es la separación que hay en cada columna o fila.
 
+Decidí hacerlo así para poder organizar las imágenes de una mejor manera y que quede bien presentado. 
+
 Ahora veremos el uso de box-shadow:
 
-```
+```css
 input.boton:hover{
   background-color: #a7ccc7;
   border-radius: 5px;
@@ -556,8 +558,66 @@ Como podemos ver, el box-shadow se utiliza en los botones de "Enviar" y "Borrar"
 
 Por último, veremos los estilos de los menús:
 
+```css
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -230px;            
+  width: 230px;
+  height: 100%;
+  background-color: #8cdbd6;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 15;
+  font-family: "Opciones";
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.active {
+  left: 0;   
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #31798c;
+  text-decoration: none;
+}
+
+.side-menu a:hover {
+  color: whitesmoke;
+}
 ```
+
+Como podemos observar aquí, en ".side-menu" sirve para colocar correctamente el menú lateral, es decir, que se ubique a la izquierda de la página y se abra si haces clic en el botón. El resto de detalles son colores para las letras de las opciones combinen con la estética de la página y el ":hover" para cuando se pase el cursor encima cambie el color de las opciones y se note. La fuente "Opciones" sirve para diferenciar del resto de fuentes de la página.
+
+Algo similar ocurre con el menú de la derecha:
+
+```css
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.main-nav a {
+  color: #bde3de;
+  padding: 10px;
+  font-family: "Opciones";
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
 ```
+
+
 
 ### 4.4. Fuentes utilizadas
 
