@@ -89,6 +89,10 @@ CSS:
 
 ### 4.1. Introducción
 
+Para esta prueba, decide crear una página web centrada en uno de mis videojuegos favoritos: Time Traveler. Para la página decide incluir una pequeña sipnosis sobre la narrativa del juego, una galería de imágenes que contiene algunas imágenes del juego, una tabla con las especificaciones del juego, como lo serían el nombre de la creadora, el año de publicación...
+Luego podemos encontrar un formulario para contactarse con la desarrolladora de la página para saber más del juego y por último encontramos diversos links sobre las redes sociales y la página donde se descargan los de la creadora. 
+
+Para el diseño de la página he tomado la paleta de colores del juego, en el que se destaca mucho tonos de color azul. En el header decidí colocar algunos sprites del juego para representar a los personajes más importantes en su narrativa. Se buscaba respetar mucho los espacios para que se aprecie más lo visual de la página. Para el botón de la parte superior izquierda decidí utilizar unos assets del juego de la protagonista con el ojo abierto y cerrado si se abre. 
 
 ### 4.2. Evidencias de HTML5
 
