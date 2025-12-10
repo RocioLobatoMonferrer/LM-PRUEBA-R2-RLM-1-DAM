@@ -140,7 +140,7 @@ Así es como se vería en la página:
 ![Header](img/header.png)
 ![MenuLateral](img/menuLateral.png)
 
-En el header podemos encontrar que estas las siguientes partes contienen enlaces:
+En el header podemos encontrar los siguientes enlaces internos:
 ![EnlaceHeader](img/enlaces1.png)
 ![EnlaceMenuLateral](img/enlaces2.png)
 
@@ -180,6 +180,7 @@ Este primer section, con id "hero", encontramos otro header el cual sirve para e
   ![Hero](img/hero1.png)
 
 
+
     
   2.2. Section Galería de Imágenes
 
@@ -209,6 +210,9 @@ Para esta sección, encontramos la galería, el cúal consiste en un h2 como tí
 Así es como se vería en la página: 
 ![Galeria](img/galeria.png)
 
+
+En está sección, podemos encontrar los siguientes enlaces internos:
+![EnlaceGalEj](img/enlacesEjGal.png)
 
   
 2.3. Section Tabla/Especificaciones
@@ -330,8 +334,9 @@ En está última sección, encontramos el contacto, el cúal tiene un h2 como t�
 
 Así es como se vería en la página: 
 ![Contacto](img/contc.png)
-   
 
+En esta sección podemos encontrar los siguientes enlaces externos:
+![EnlaceContacto](img/enlaces3.png)
 
 3. Footer
 
@@ -347,18 +352,9 @@ Aquí podemos encontrar el footer, el cúal presenta un class llamado "site-foot
 Así es como se vería en la página: 
 ![Footer](img/footer.png)
 
-4. Enlaces Externos
-
-Aquí veremos cada enlace de la página:
-
-En el header podemos encontrar los enlaces siguientes: 
-
-
-
-
-![EnlaceContacto](img/enlaces3.png)
+En el footer podemos encontrar el siguiente enlace interno:
 ![EnlaceFooter](img/enlaces4.png)
-![EnlaceGalEj](img/enlacesEjGal.png)
+
 
 ### 4.3. Evidencias de CSS
 
