@@ -776,10 +776,117 @@ Algo similar ocurre con el menú de la derecha:
 
 ### 4.4. Fuentes utilizadas
 
+En este apartado veremos las fuentes que han sido utilizadas.
+Primero veremos las fuentes locales:
+
+```css
+@font-face {
+  font-family: "Título h1";
+  src: url("fonts/Digital\ Change\ Demo.ttf") format('truetype');
+} 
+
+@font-face {
+  font-family: "Opciones";
+  src: url("fonts/Blackney-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "text";
+  src: url("fonts/Petrona-VariableFont_wght.ttf") format('truetype');
+}
+```
+
+Para que funcione estas fuentes debemos colocar el @font-face. Dentro de él, debemos ponerle un nombre con font-family y luego indicamos la url del archivo .ttf. Luego, donde queramos colocar está fuente, lo hacemos con el font-family como lo vemos a continuación:
+
+```css
+fieldset, input {
+  font-family: "text";
+  font-size: 20px;
+  padding: auto;
+  margin: 15px;
+  border-radius: 15px;
+  border: #8cdbd6;
+}
+```
+
+Decidí eligir estas tipografías ya que quería que cada texto destacase a diferencia del respecto de tipografías. Por ejemplo: el título tiene una tipografía única, las Opciones solo se usan en los menús y la de text solo se usan en textos que vayan con las etiquetas p.
+
+    Problema sin Solución: Las fuentes utilizadas en el título y en los menús no funcionan y desconozco porque ocurre esto.
+
+A continuación veremos las fuentes online:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+```
+
+
+```css
+h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin: 20px;
+}
+
+h3 {
+  margin: 15px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  font-style: normal;
+}
+```
+
+Para que funcione la fuente online, debemos copiar el enlace que nos proporciona la página Google Fonts y para que se visualice debemos copiar el css que proporciona la página y así se la ponemos, en este caso, a los h2 y h3.
+
+Decidí escoger esta tipografía ya que es una similar a la que se utiliza dentro del videojuego y así el visitante de la página pueda saber cuando empieza una nueva sección. 
 
 ### 4.5. Menú lateral: breve explicación
 
+Aquí veremos como funciona el botón del menú lateral brevemente:
+
+```html
+<script>
+    const sideMenu = document.getElementById("sideMenu");
+    const toggleBtn = document.querySelector(".open-menu");
+    const toggleIcon = document.getElementById("toggleIcon"); 
+    toggleBtn.addEventListener("click", () => {
+        sideMenu.classList.toggle("active");
+        toggleBtn.classList.toggle("active");
+        if (sideMenu.classList.contains("active")) {
+            toggleIcon.src = "img/boton-abierto.png"; 
+        } else {
+            toggleIcon.src = "img/boton.png";
+        }
+    });
+</script>
+```
+
+Al pulsar el botón que hay en la página, se abrirá un menú lateral en el cuál puedes elegir dandole clic entre las secciones que hay disponibles y te llevará a ellas. Esto provoca que exista un cambio, el cual consiste de pasar de .open-menu a sideMenu. Este menú puede ser movido con CSS mediante los siguientes ajustes que hay en .side-menu:
+
+```css
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -230px;            
+  width: 230px;
+  height: 100%;
+  background-color: #8cdbd6;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 15;
+  font-family: "Opciones";
+  display: flex;
+  flex-direction: column;
+}
+```
+
 
 ### 4.6. Conclusión personal
+
 
 
