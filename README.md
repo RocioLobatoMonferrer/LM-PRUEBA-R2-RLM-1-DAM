@@ -45,6 +45,7 @@ Aquí podemos observar que el grid se encarga de centrar el h1 y las opciones qu
 
 <img width="386" height="349" alt="image" src="https://github.com/user-attachments/assets/6ac117d9-4d11-41a3-a7d0-6c6ab960e681" />
 
+<hr>
 
 ## Ejercicio 2: Reorganización del header con tres elementos
 
@@ -64,6 +65,7 @@ CSS:
 
 <img width="402" height="298" alt="image" src="https://github.com/user-attachments/assets/3d4a76bf-14ab-4aea-bfb1-29676533995d" />
 
+<hr>
 
 ## Ejercicio 3
 ### 3A. Crear miniaturas
@@ -85,6 +87,8 @@ CSS:
 
 <img width="952" height="919" alt="image" src="https://github.com/user-attachments/assets/8d5461c8-610f-4be1-9478-42718b3a18d3" />
 
+<hr>
+
 ## Ejercicio 4: Informe de evidencias del proyecto (defensa técnica simple)
 
 ### 4.1. Introducción
@@ -96,16 +100,68 @@ Para el diseño de la página he tomado la paleta de colores del juego, en el qu
 
 ### 4.2. Evidencias de HTML5
 
+1. Header
+   
+En el header, con una class "site-header", podemos encontrar el título de la página dentro de un h1, luego los sprites de los personajes más importantes del juego que se encuentran dentro de un figure. Después encontramos un nav con class "main-nav" que hace referencia a las diferentes secciones de la página para poder acceder a ellas mediante enlaces. A continuación tenemos un botón que sirve para el menú lateral, que funciona con JavaScript y por último encontramos otro nav con id "sideMenu" y un class "side-menu". En este otro nav se utiliza para el menú lateral el cual tiene unos enlaces que nos llevan a cada sección de la página, al igual que el primer nav.
+
+```
+<header class="site-header">
+    <h1>Time Traveler</h1> 
+    <figure>
+      <img src="img/mai1.png" alt="1" class="chibi">
+      <img src="img/kyo1.png" alt="2" class="chibi">
+      <img src="img/kazu.png" alt="3" class="chibi">
+      <img src="img/sakura.png" alt="4" class="chibi">
+      <img src="img/chrono.png" alt="5" class="chibi">
+      <img src="img/pietro.png" alt="6" class="chibi">
+    </figure>
+    
+    <nav class="main-nav">
+        <a href="#hero">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tab">Tabla</a>
+        <a href="#for">Formulario</a>
+        <a href="#con">Contacto</a>
+    </nav>
+
+    <button class="open-menu" aria-label="Abrir menú lateral"><img id="toggleIcon" src="img/boton.png"></button>
+
+    <nav id="sideMenu" class="side-menu">
+        <a href="#hero">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tab">Tabla</a>
+        <a href="#for">Formulario</a>
+        <a href="#con">Contacto</a>
+    </nav>
+  </header>
+```
+
+Así es como se vería en la página: 
 ![Header](img/header.png)
-explicar -> main, section
 ![MenuLateral](img/menuLateral.png)
+
+2. Main
+   
 ![Hero](img/hero1.png)
+
+3. Sections
+   
 ![Galeria](img/galeria.png)
 ![Tabla](img/tabla.png)
 ![Formulario](img/form.png)
 ![Contacto](img/contc.png)
+
+4. Footer
+   
 ![Footer](img/footer.png)
-sacar captura a enlaces 
+
+5. Enlaces Externos
+   
+![EnlaceHeader](img/enlaces1.png)
+![EnlaceMenuLateral](img/enlaces2.png)
+![EnlaceContacto](img/enlaces3.png)
+![EnlaceFooter](img/enlaces4.png)
+![EnlaceGalEj](img/enlacesEjGal.png)
 
 ### 4.3. Evidencias de CSS
 
