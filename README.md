@@ -96,6 +96,16 @@ Para el diseño de la página he tomado la paleta de colores del juego, en el qu
 
 ### 4.2. Evidencias de HTML5
 
+![Header](img/header.png)
+explicar -> main, section
+![MenuLateral](img/menuLateral.png)
+![Hero](img/hero1.png)
+![Galeria](img/galeria.png)
+![Tabla](img/tabla.png)
+![Formulario](img/form.png)
+![Contacto](img/contc.png)
+![Footer](img/footer.png)
+sacar captura a enlaces 
 
 ### 4.3. Evidencias de CSS
 
